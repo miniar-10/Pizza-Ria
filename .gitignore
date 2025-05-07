@@ -1,0 +1,53 @@
+## Standard .NET ignores
+**/[Bb]in/
+**/[Oo]bj/
+**/.vs/
+**/.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.iml
+
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+## Sensible files to ignore
+.env
+.env.*
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Staging.json
+secrets.json
+*.ps1
+*.orig
+
+## PostgreSQL specific
+**/.psql_history
+**/postgresql/data/
+**/pgdata/
+
+## IDE specific
+.idea/
+.vscode/
+*.swp
+*.swo
+
+## NuGet
+**/[Pp]ackages/*
+*.nupkg
+nuget.exe
+
+## Rider
+.idea/
+*.sln.iml
