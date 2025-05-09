@@ -27,8 +27,8 @@ Setup Instructions
 bash
 Copy
 Edit
-git clone https://github.com/yourusername/pizza-api.git
-cd pizza-api
+git clone https://github.com/miniar-10/pizza-ria.git
+cd pizza-ria
 dotnet restore
 dotnet ef database update
 dotnet run
