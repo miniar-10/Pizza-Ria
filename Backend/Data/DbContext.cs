@@ -1,10 +1,10 @@
-﻿namespace Backend.Data
-{
-    // Data/AppDbContext.cs
+﻿ // Data/AppDbContext.cs
     using Microsoft.EntityFrameworkCore;
-    using Backend.Models; 
+    
 
-    namespace YourProjectName.Data
+using Backend.Models;
+
+namespace Backend.Data
     {
         public class AppDbContext : DbContext
         {
@@ -17,4 +17,4 @@
 
         }
     }
-}
+

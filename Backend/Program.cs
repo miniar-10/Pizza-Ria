@@ -1,7 +1,8 @@
-using Backend.Data.YourProjectName.Data;
+using Backend.Data;
 using Backend.Services;
 using Microsoft.EntityFrameworkCore;
 using DotNetEnv;
+using Backend.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IPizzaService, PizzaService>();
 // Register the config service
 builder.Services.AddSingleton<DatabaseConfigService>();
 Env.Load();
