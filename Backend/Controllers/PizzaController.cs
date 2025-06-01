@@ -1,8 +1,11 @@
 ﻿using Backend.Models;
 using Backend.Services;
 using Backend.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
+
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class PizzaController : ControllerBase
