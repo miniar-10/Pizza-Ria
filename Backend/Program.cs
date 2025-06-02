@@ -10,6 +10,8 @@ using System.Text;
 using Microsoft.Extensions.DependencyInjection;
 using Backend.Models;
 using Microsoft.AspNetCore.Identity;
+using Backend.Repositories.Interfaces;
+using Backend.Repositories;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -66,7 +68,7 @@ builder.Services.AddSwaggerGen(c =>
         }
     });
 });
-
+builder.Services.AddScoped<IPizzaRepository, PizzaRepository>();
 builder.Services.AddScoped<IPizzaService, PizzaService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
