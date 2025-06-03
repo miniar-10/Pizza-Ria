@@ -1,5 +1,6 @@
 ﻿using Backend.Data;
 using Backend.Models;
+using Backend.Repositories.Interfaces;
 using Backend.Services.Interfaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -13,23 +14,25 @@ namespace Backend.Services
 {
     public class AuthService : IAuthService
     {
-        private readonly IConfiguration _configuration;
+        
         private readonly IPasswordHasher<User> _passwordHasher;
-        private readonly AppDbContext _dbContext;
+        private readonly IUserRepository _userRepository;
 
-        public AuthService(IConfiguration configuration, IPasswordHasher<User> password, AppDbContext dbContext)
+        public AuthService(IPasswordHasher<User> password, IUserRepository userRepository)
         {
             _passwordHasher = password;
-            _configuration = configuration;
-            _dbContext = dbContext;
+            _userRepository = userRepository;
+       
         }
 
         public async Task<string> AuthenticateAsync(LoginModel login)
         {
-            var user = await _dbContext.Users.SingleOrDefaultAsync(u => u.Name == login.LoginName);
-            if (user == null)
+            var userExists = await _userRepository.ExistsByNameAsync(login.LoginName);
+            if (!userExists)
+            {
                 return null;
-
+            }
+            var user = await _userRepository.GetByNameAsync(login.LoginName);
             var result = _passwordHasher.VerifyHashedPassword(user, user.HashedPassword, login.Password);
             if (result != PasswordVerificationResult.Success)
                 return null;
@@ -54,7 +57,9 @@ namespace Backend.Services
 
         public async Task<bool> RegisterAsync(RegisterModel User)
         {
-            if (await _dbContext.Users.AnyAsync(u => u.Name == User.Name))
+            var userExists= await _userRepository.ExistsByNameAsync(User.Name);
+
+            if (userExists)
                 return false; 
 
             var user = new User
@@ -67,8 +72,7 @@ namespace Backend.Services
             // Hash the password and store it
             user.HashedPassword = _passwordHasher.HashPassword(user, User.HashedPassword);
 
-            _dbContext.Users.Add(user);
-            await _dbContext.SaveChangesAsync();
+            await _userRepository.AddUserAsync(user);
 
             return true;
         }

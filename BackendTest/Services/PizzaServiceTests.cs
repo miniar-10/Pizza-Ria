@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace BackendTest.Services
 {
-    public class PizzaTests
+    public class PizzaServiceTests
     {
         private readonly IPizzaRepository _fakeRepo;
         private readonly PizzaService _pizzaService;
 
-        public PizzaTests()
+        public PizzaServiceTests()
         {
             _fakeRepo = A.Fake<IPizzaRepository>();
             _pizzaService = new PizzaService(_fakeRepo);
