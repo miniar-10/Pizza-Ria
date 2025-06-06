@@ -26,4 +26,4 @@ jobs:
       run: dotnet build Backend/Backend.sln --no-restore
 
     - name: Run Tests
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test BackendTest/BackendTest.csproj --no-build --verbosity normal
