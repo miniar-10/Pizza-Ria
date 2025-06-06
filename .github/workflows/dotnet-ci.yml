@@ -27,3 +27,6 @@ jobs:
 
     - name: Run Tests
       run: dotnet test BackendTest/BackendTest.csproj --no-build --verbosity normal
+    
+    - name: Run Integration Tests
+      run: dotnet test IntegrationTests/IntegrationTests.csproj --no-build --verbosity normal
