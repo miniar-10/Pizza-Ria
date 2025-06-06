@@ -2,9 +2,11 @@ name: .NET CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build-test:
@@ -17,7 +19,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 8.0.x 
+        dotnet-version: 8.0.x
 
     - name: Restore dependencies
       run: dotnet restore Backend/Backend.sln
@@ -25,8 +27,28 @@ jobs:
     - name: Build
       run: dotnet build Backend/Backend.sln --no-restore
 
+    - name: List contents of main API project's bin/Debug/net8.0
+      run: |
+        echo "Listing contents of main API project's output directory:"
+        ls -R Backend/bin/Debug/net8.0 || echo "Directory not found or empty. Please check path."
+
+    - name: Check for deps.json in main API project's bin folder
+      run: |
+        echo "Checking for deps.json in main API project's output directory:"
+        find Backend/bin/Debug/net8.0 -name "*.deps.json" || echo "*.deps.json not found in API project output."
+
+    - name: List contents of IntegrationTests bin/Debug/net8.0
+      run: |
+        echo "Listing contents of IntegrationTests output directory:"
+        ls -R IntegrationTests/bin/Debug/net8.0 || echo "Directory not found or empty. Please check path."
+
+    - name: Check for deps.json in IntegrationTests bin folder
+      run: |
+        echo "Checking for deps.json in IntegrationTests output directory:"
+        find IntegrationTests/bin/Debug/net8.0 -name "*.deps.json" || echo "*.deps.json not found in IntegrationTests output."
+
     - name: Run Tests
       run: dotnet test BackendTest/BackendTest.csproj --no-build --verbosity normal
-    
+
     - name: Run Integration Tests
       run: dotnet test IntegrationTests/IntegrationTests.csproj --no-build --verbosity normal
