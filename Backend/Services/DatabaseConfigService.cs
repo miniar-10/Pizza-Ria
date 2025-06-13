@@ -22,7 +22,7 @@ namespace Backend.Services
             Console.WriteLine(baseString);
 
 
-            return baseString?? "";
+            return baseString ?? "";
 
 
         }
