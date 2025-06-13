@@ -17,7 +17,7 @@ jobs:
         - name: Show directory contents
           run: ls -la
         - name: Check Code Format
-          run: dotnet format --verify-no-changes --verbosity diag
+          run: dotnet format Backend/Backend.sln --verify-no-changes --verbosity diag
 
   build-test:
     runs-on: ubuntu-latest
