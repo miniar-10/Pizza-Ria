@@ -25,18 +25,24 @@ namespace Backend.Services
 
         }
 
-        public async Task<string> AuthenticateAsync(LoginModel login)
+        public async Task<AuthResult> AuthenticateAsync(LoginModel login)
         {
-            var userExists = await _userRepository.ExistsByNameAsync(login.LoginName);
-            if (!userExists)
-            {
-                return null;
-            }
             var user = await _userRepository.GetByNameAsync(login.LoginName);
+            if (user == null)
+            {
+                return new AuthResult { IsSuccess = false, ErrorMessage = "User does not exist." };
+            }
+
+            if (string.IsNullOrEmpty(user.HashedPassword))
+            {
+                return new AuthResult { IsSuccess = false, ErrorMessage = "Invalid user password data." };
+            }
+
             var result = _passwordHasher.VerifyHashedPassword(user, user.HashedPassword, login.Password);
             if (result != PasswordVerificationResult.Success)
-                return null;
-
+            {
+                return new AuthResult { IsSuccess = false, ErrorMessage = "Invalid credentials." };
+            }
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this is a Super Secure password 1234"));
@@ -52,7 +58,9 @@ namespace Backend.Services
             };
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            return await Task.FromResult(tokenHandler.WriteToken(token));
+            var tokenString = tokenHandler.WriteToken(token);
+
+            return new AuthResult { IsSuccess = true, Token = tokenString };
         }
 
         public async Task<bool> RegisterAsync(RegisterModel User)
