@@ -14,7 +14,7 @@ namespace Backend.Services
 {
     public class AuthService : IAuthService
     {
-        
+
         private readonly IPasswordHasher<User> _passwordHasher;
         private readonly IUserRepository _userRepository;
 
@@ -22,7 +22,7 @@ namespace Backend.Services
         {
             _passwordHasher = password;
             _userRepository = userRepository;
-       
+
         }
 
         public async Task<string> AuthenticateAsync(LoginModel login)
@@ -57,10 +57,10 @@ namespace Backend.Services
 
         public async Task<bool> RegisterAsync(RegisterModel User)
         {
-            var userExists= await _userRepository.ExistsByNameAsync(User.Name);
+            var userExists = await _userRepository.ExistsByNameAsync(User.Name);
 
             if (userExists)
-                return false; 
+                return false;
 
             var user = new User
             {

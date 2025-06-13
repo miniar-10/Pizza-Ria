@@ -15,7 +15,7 @@ namespace Backend.Repositories
 
         public async Task AddUserAsync(User user)
         {
-            _appDbContext.Users.Add(user);  
+            _appDbContext.Users.Add(user);
             await _appDbContext.SaveChangesAsync();
         }
 
@@ -24,7 +24,7 @@ namespace Backend.Repositories
             return await _appDbContext.Users.AnyAsync(u => u.Name == name);
         }
 
-        public async  Task<User?> GetByNameAsync(string name)      
+        public async Task<User?> GetByNameAsync(string name)
         {
             return await _appDbContext.Users.SingleOrDefaultAsync(x => x.Name == name);
         }

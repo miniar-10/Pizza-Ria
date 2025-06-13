@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Backend.Repositories
 {
-    public class PizzaRepository: IPizzaRepository
+    public class PizzaRepository : IPizzaRepository
     {
         private readonly AppDbContext _dbContext;
 

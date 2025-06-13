@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Backend.Services
 {
-    public class PizzaService: IPizzaService
+    public class PizzaService : IPizzaService
     {
         readonly IPizzaRepository _pizzarRepository;
 
@@ -20,7 +20,7 @@ namespace Backend.Services
         {
             return await _pizzarRepository.GetAllAsync();
         }
-        public async Task <Pizza?> getByIdAsync(int id)
+        public async Task<Pizza?> getByIdAsync(int id)
         {
             return await _pizzarRepository.GetByIdAsync(id);
         }
@@ -29,17 +29,17 @@ namespace Backend.Services
             return await _pizzarRepository.GetByNameAsync(name);
 
         }
-        public async Task <Pizza> AddAsync(Pizza pizza)
+        public async Task<Pizza> AddAsync(Pizza pizza)
         {
-             return await _pizzarRepository.AddAsync(pizza);
+            return await _pizzarRepository.AddAsync(pizza);
         }
 
-        public async Task <bool> UpdateAsync(int id, Pizza pizza)
+        public async Task<bool> UpdateAsync(int id, Pizza pizza)
         {
             return await _pizzarRepository.UpdateAsync(id, pizza);
 
         }
-        public async Task <bool> DeleteAsync(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
             return await _pizzarRepository.DeleteAsync(id);
         }

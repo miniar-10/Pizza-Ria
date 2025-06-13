@@ -19,9 +19,9 @@ namespace BackendTest.Services
 
         public AuthServiceTests()
         {
-            _passwordHasher = A.Fake<IPasswordHasher<User>>();   
+            _passwordHasher = A.Fake<IPasswordHasher<User>>();
             _userRepository = A.Fake<IUserRepository>();
-            _authService = new AuthService(_passwordHasher,_userRepository);
+            _authService = new AuthService(_passwordHasher, _userRepository);
         }
 
         [Fact]
@@ -29,10 +29,10 @@ namespace BackendTest.Services
         {
             //Arrange
             var fake_user = new RegisterModel { Name = "Admin", HashedPassword = "hasedadmin", Address = "secret adress", PhoneNumber = 55432432 };
-            A.CallTo(()=>_userRepository.ExistsByNameAsync("Admin")).Returns(true);
+            A.CallTo(() => _userRepository.ExistsByNameAsync("Admin")).Returns(true);
 
             //Act
-            var result =await _authService.RegisterAsync(fake_user);
+            var result = await _authService.RegisterAsync(fake_user);
             //Assert
             Assert.False(result);
         }
@@ -55,7 +55,7 @@ namespace BackendTest.Services
             var fake_user = new RegisterModel { Name = "Admin", HashedPassword = "hasedadmin", Address = "secret adress", PhoneNumber = 55432432 };
             var result = await _authService.RegisterAsync(fake_user);
 
-            A.CallTo(()=>_userRepository.AddUserAsync(A<User>._))
+            A.CallTo(() => _userRepository.AddUserAsync(A<User>._))
     .MustHaveHappenedOnceExactly();
 
             Assert.True(result);

@@ -1,21 +1,21 @@
-﻿ // Data/AppDbContext.cs
-    using Microsoft.EntityFrameworkCore;
-    
+﻿// Data/AppDbContext.cs
+using Microsoft.EntityFrameworkCore;
+
 
 using Backend.Models;
 
 namespace Backend.Data
+{
+    public class AppDbContext : DbContext
     {
-        public class AppDbContext : DbContext
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
         {
-            public AppDbContext(DbContextOptions<AppDbContext> options)
-                : base(options)
-            {
-            }
+        }
 
-            public DbSet<Pizza> Pizzas { get; set; }
+        public DbSet<Pizza> Pizzas { get; set; }
         public DbSet<User> Users { get; set; }
 
-        }
     }
+}
 

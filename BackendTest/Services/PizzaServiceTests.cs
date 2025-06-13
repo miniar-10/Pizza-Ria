@@ -27,7 +27,7 @@ namespace BackendTest.Services
         {
             //Arrange
 
-            var fakePizzas = new List<Pizza> { 
+            var fakePizzas = new List<Pizza> {
                 new Pizza { Id = 1, Name = "Margherita", IseGluteneFree = false },
                 new Pizza { Id = 2, Name = "Pepperoni", IseGluteneFree = true }
 
@@ -36,7 +36,7 @@ namespace BackendTest.Services
 
 
             //Act
-            var result= await _pizzaService.getAllAsync();
+            var result = await _pizzaService.getAllAsync();
 
 
             //Assert
@@ -44,9 +44,9 @@ namespace BackendTest.Services
             Assert.Collection(result,
                 pizza => Assert.Equal("Margherita", pizza.Name),
                 pizza => Assert.Equal("Pepperoni", pizza.Name));
-        
 
-    }
+
+        }
 
         [Fact]
         public async Task GetByIdAsync_ReturnsCorrectPizza()
@@ -98,7 +98,7 @@ namespace BackendTest.Services
             A.CallTo(() => _fakeRepo.UpdateAsync(3, pizza)).Returns(true);
 
             //Act
-            var result = await _pizzaService.UpdateAsync(3,pizza);
+            var result = await _pizzaService.UpdateAsync(3, pizza);
 
             //Assert
             Assert.True(result);

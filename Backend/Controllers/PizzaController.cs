@@ -13,10 +13,10 @@ public class PizzaController : ControllerBase
     private readonly ILogger<PizzaController> _logger;
     private readonly IPizzaService _service;
 
-   public PizzaController(IPizzaService service, ILogger<PizzaController> logger)
+    public PizzaController(IPizzaService service, ILogger<PizzaController> logger)
     {
         _service = service;
-        _logger = logger??throw new ArgumentNullException(nameof(service));
+        _logger = logger ?? throw new ArgumentNullException(nameof(service));
     }
 
     [HttpGet]
@@ -27,19 +27,20 @@ public class PizzaController : ControllerBase
         return Ok(await _service.getAllAsync());
     }
 
-    [HttpGet("{id}")] public async Task<IActionResult> Get(int id)
+    [HttpGet("{id}")]
+    public async Task<IActionResult> Get(int id)
     {
         _logger.LogInformation("Fetching pizza at {Time}", DateTime.UtcNow);
 
-        var item =await _service.getByIdAsync(id);
-        return item ==null?NotFound(): Ok(item); 
+        var item = await _service.getByIdAsync(id);
+        return item == null ? NotFound() : Ok(item);
     }
     [HttpPost]
-    public async Task<IActionResult> Create( Pizza pizza)
+    public async Task<IActionResult> Create(Pizza pizza)
     {
         _logger.LogInformation("Creating new pizza at {Time}", DateTime.UtcNow);
         var created = await _service.AddAsync(pizza);
-        return CreatedAtAction(nameof(Get), new {id=created.Id},created);
+        return CreatedAtAction(nameof(Get), new { id = created.Id }, created);
     }
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, Pizza pizza)
@@ -50,7 +51,7 @@ public class PizzaController : ControllerBase
         return success ? Ok(success) : NotFound();
     }
     [HttpDelete("{id}")]
-    public async Task <IActionResult> Delete (int id)
+    public async Task<IActionResult> Delete(int id)
     {
         _logger.LogInformation("Deleting pizza at {Time}", DateTime.UtcNow);
 
