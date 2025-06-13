@@ -13,8 +13,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Show directory contents
+        run: ls -la
       - name: Check Code Format
-        run: ls && dotnet format --verify-no-changes --verbosity diag
+        run: dotnet format --verify-no-changes --verbosity diag
   build-test:
     runs-on: ubuntu-latest
 
