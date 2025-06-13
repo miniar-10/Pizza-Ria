@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Check Code Format
-        run: dotnet format Backend/Backend.sln --verify-no-changes --verbosity diag
+        run: dotnet format --verify-no-changes --verbosity diag
   build-test:
     runs-on: ubuntu-latest
 
