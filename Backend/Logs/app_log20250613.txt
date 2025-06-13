@@ -467,3 +467,17 @@ RETURNING "Id";
 2025-06-13 01:44:28.070 +02:00 [INF] Executed action Backend.Controllers.AuthController.Register (Backend) in 1521.0742ms
 2025-06-13 01:44:28.071 +02:00 [INF] Executed endpoint 'Backend.Controllers.AuthController.Register (Backend)'
 2025-06-13 01:44:28.081 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7009/api/Auth/register - 200 null text/plain; charset=utf-8 1618.8894ms
+2025-06-13 12:13:38.700 +02:00 [INF] User profile is available. Using 'C:\Users\Lenovo\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-06-13 12:13:51.478 +02:00 [INF] Now listening on: https://localhost:7009
+2025-06-13 12:13:51.481 +02:00 [INF] Now listening on: http://localhost:5296
+2025-06-13 12:13:52.803 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-13 12:13:52.807 +02:00 [INF] Hosting environment: Development
+2025-06-13 12:13:52.808 +02:00 [INF] Content root path: C:\Users\Lenovo\source\repos\Pizza-Ria\Backend
+2025-06-13 12:15:01.726 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7009/swagger/index.html - null null
+2025-06-13 12:15:18.851 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7009/swagger/index.html - 200 null text/html;charset=utf-8 17230.9873ms
+2025-06-13 12:15:19.955 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7009/_framework/aspnetcore-browser-refresh.js - null null
+2025-06-13 12:15:20.037 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7009/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 81.6899ms
+2025-06-13 12:15:20.392 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7009/_vs/browserLink - null null
+2025-06-13 12:15:49.074 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7009/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28681.7236ms
+2025-06-13 12:15:50.050 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7009/swagger/v1/swagger.json - null null
+2025-06-13 12:15:51.037 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7009/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 988.0274ms

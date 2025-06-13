@@ -11,10 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System.Text;
-using Microsoft.EntityFrameworkCore.InMemory;
 
-
-public class Program
+public partial class Program // 👈 no need to make *this* class partial
 {
     public static void Main(string[] args)
     {
@@ -65,7 +63,6 @@ public class Program
 
         DotNetEnv.Env.Load();
 
-        // ⬇️ Conditional provider registration to avoid conflicts in tests
         var useInMemory = builder.Configuration.GetValue<bool>("UseInMemoryDb");
 
         if (useInMemory)
@@ -106,3 +103,4 @@ public class Program
     }
 }
 
+public partial class Program { }

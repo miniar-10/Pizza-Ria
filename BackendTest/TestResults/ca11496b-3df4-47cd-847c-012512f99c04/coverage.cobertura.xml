@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.11410000000000001" branch-rate="0.0384" version="1.9" timestamp="1749802942" lines-covered="55" lines-valid="482" branches-covered="1" branches-valid="26">
+<coverage line-rate="0.11199999999999999" branch-rate="0.07690000000000001" version="1.9" timestamp="1749810602" lines-covered="54" lines-valid="482" branches-covered="2" branches-valid="26">
   <sources>
     <source>C:\Users\Lenovo\source\repos\Pizza-Ria\Backend\</source>
   </sources>
   <packages>
-    <package name="Backend" line-rate="0.11410000000000001" branch-rate="0.0384" complexity="81">
+    <package name="Backend" line-rate="0.11199999999999999" branch-rate="0.07690000000000001" complexity="81">
       <classes>
         <class name="PizzaController" filename="Controllers\PizzaController.cs" line-rate="0" branch-rate="0" complexity="2">
           <methods>
@@ -156,28 +156,30 @@
             <line number="51" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Program" filename="Program.cs" line-rate="0.5428000000000001" branch-rate="0.25" complexity="5">
+        <class name="Program" filename="Program.cs" line-rate="0" branch-rate="0" complexity="5">
           <methods>
-            <method name="Main" signature="(System.String[])" line-rate="0.6666" branch-rate="1" complexity="1">
+            <method name="Main" signature="(System.String[])" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="20" hits="1" branch="False" />
-                <line number="21" hits="1" branch="False" />
-                <line number="22" hits="1" branch="False" />
-                <line number="23" hits="1" branch="False" />
-                <line number="24" hits="0" branch="False" />
-                <line number="25" hits="0" branch="False" />
+                <line number="18" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="22" hits="0" branch="False" />
+                <line number="23" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="ConfigureServices" signature="(Microsoft.AspNetCore.Builder.WebApplicationBuilder)" line-rate="0.6274000000000001" branch-rate="0.5" complexity="2">
+            <method name="ConfigureServices" signature="(Microsoft.AspNetCore.Builder.WebApplicationBuilder)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="28" hits="1" branch="False" />
-                <line number="29" hits="1" branch="False" />
-                <line number="31" hits="1" branch="False" />
+                <line number="26" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+                <line number="29" hits="0" branch="False" />
+                <line number="30" hits="0" branch="False" />
+                <line number="31" hits="0" branch="False" />
                 <line number="32" hits="0" branch="False" />
                 <line number="33" hits="0" branch="False" />
                 <line number="34" hits="0" branch="False" />
                 <line number="35" hits="0" branch="False" />
-                <line number="36" hits="1" branch="False" />
+                <line number="36" hits="0" branch="False" />
                 <line number="37" hits="0" branch="False" />
                 <line number="38" hits="0" branch="False" />
                 <line number="39" hits="0" branch="False" />
@@ -186,84 +188,84 @@
                 <line number="42" hits="0" branch="False" />
                 <line number="43" hits="0" branch="False" />
                 <line number="44" hits="0" branch="False" />
-                <line number="45" hits="0" branch="False" />
-                <line number="46" hits="1" branch="False" />
-                <line number="48" hits="1" branch="False" />
-                <line number="49" hits="1" branch="False" />
-                <line number="50" hits="1" branch="False" />
-                <line number="52" hits="1" branch="False" />
-                <line number="53" hits="1" branch="False" />
-                <line number="54" hits="1" branch="False" />
-                <line number="55" hits="1" branch="False" />
-                <line number="56" hits="1" branch="False" />
-                <line number="58" hits="1" branch="False" />
-                <line number="59" hits="1" branch="False" />
-                <line number="60" hits="1" branch="False" />
-                <line number="61" hits="1" branch="False" />
-                <line number="62" hits="1" branch="False" />
-                <line number="64" hits="1" branch="False" />
-                <line number="66" hits="1" branch="False" />
-                <line number="69" hits="1" branch="False" />
-                <line number="71" hits="1" branch="True" condition-coverage="50% (1/2)">
+                <line number="46" hits="0" branch="False" />
+                <line number="47" hits="0" branch="False" />
+                <line number="48" hits="0" branch="False" />
+                <line number="50" hits="0" branch="False" />
+                <line number="51" hits="0" branch="False" />
+                <line number="52" hits="0" branch="False" />
+                <line number="53" hits="0" branch="False" />
+                <line number="54" hits="0" branch="False" />
+                <line number="56" hits="0" branch="False" />
+                <line number="57" hits="0" branch="False" />
+                <line number="58" hits="0" branch="False" />
+                <line number="59" hits="0" branch="False" />
+                <line number="60" hits="0" branch="False" />
+                <line number="62" hits="0" branch="False" />
+                <line number="64" hits="0" branch="False" />
+                <line number="66" hits="0" branch="False" />
+                <line number="68" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
-                    <condition number="341" type="jump" coverage="50%" />
+                    <condition number="341" type="jump" coverage="0%" />
                   </conditions>
                 </line>
+                <line number="69" hits="0" branch="False" />
+                <line number="70" hits="0" branch="False" />
+                <line number="71" hits="0" branch="False" />
                 <line number="72" hits="0" branch="False" />
                 <line number="73" hits="0" branch="False" />
                 <line number="74" hits="0" branch="False" />
-                <line number="75" hits="0" branch="False" />
                 <line number="76" hits="0" branch="False" />
                 <line number="77" hits="0" branch="False" />
-                <line number="79" hits="1" branch="False" />
-                <line number="80" hits="1" branch="False" />
-                <line number="81" hits="1" branch="False" />
-                <line number="82" hits="1" branch="False" />
-                <line number="83" hits="1" branch="False" />
-                <line number="84" hits="1" branch="False" />
-                <line number="85" hits="1" branch="False" />
-                <line number="86" hits="2" branch="False" />
-                <line number="87" hits="1" branch="False" />
-                <line number="88" hits="1" branch="False" />
+                <line number="78" hits="0" branch="False" />
+                <line number="79" hits="0" branch="False" />
+                <line number="80" hits="0" branch="False" />
+                <line number="81" hits="0" branch="False" />
+                <line number="82" hits="0" branch="False" />
+                <line number="83" hits="0" branch="False" />
+                <line number="84" hits="0" branch="False" />
+                <line number="85" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="ConfigureMiddleware" signature="(Microsoft.AspNetCore.Builder.WebApplicationBuilder)" line-rate="0.15380000000000002" branch-rate="0" complexity="2">
+            <method name="ConfigureMiddleware" signature="(Microsoft.AspNetCore.Builder.WebApplicationBuilder)" line-rate="0" branch-rate="0" complexity="2">
               <lines>
-                <line number="91" hits="1" branch="False" />
-                <line number="92" hits="1" branch="False" />
-                <line number="94" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="88" hits="0" branch="False" />
+                <line number="89" hits="0" branch="False" />
+                <line number="91" hits="0" branch="True" condition-coverage="0% (0/2)">
                   <conditions>
                     <condition number="21" type="jump" coverage="0%" />
                   </conditions>
                 </line>
+                <line number="92" hits="0" branch="False" />
+                <line number="93" hits="0" branch="False" />
+                <line number="94" hits="0" branch="False" />
                 <line number="95" hits="0" branch="False" />
-                <line number="96" hits="0" branch="False" />
                 <line number="97" hits="0" branch="False" />
                 <line number="98" hits="0" branch="False" />
+                <line number="99" hits="0" branch="False" />
                 <line number="100" hits="0" branch="False" />
-                <line number="101" hits="0" branch="False" />
                 <line number="102" hits="0" branch="False" />
                 <line number="103" hits="0" branch="False" />
-                <line number="105" hits="0" branch="False" />
-                <line number="106" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="20" hits="1" branch="False" />
-            <line number="21" hits="1" branch="False" />
-            <line number="22" hits="1" branch="False" />
-            <line number="23" hits="1" branch="False" />
-            <line number="24" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
-            <line number="28" hits="1" branch="False" />
-            <line number="29" hits="1" branch="False" />
-            <line number="31" hits="1" branch="False" />
+            <line number="18" hits="0" branch="False" />
+            <line number="19" hits="0" branch="False" />
+            <line number="20" hits="0" branch="False" />
+            <line number="21" hits="0" branch="False" />
+            <line number="22" hits="0" branch="False" />
+            <line number="23" hits="0" branch="False" />
+            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="29" hits="0" branch="False" />
+            <line number="30" hits="0" branch="False" />
+            <line number="31" hits="0" branch="False" />
             <line number="32" hits="0" branch="False" />
             <line number="33" hits="0" branch="False" />
             <line number="34" hits="0" branch="False" />
             <line number="35" hits="0" branch="False" />
-            <line number="36" hits="1" branch="False" />
+            <line number="36" hits="0" branch="False" />
             <line number="37" hits="0" branch="False" />
             <line number="38" hits="0" branch="False" />
             <line number="39" hits="0" branch="False" />
@@ -272,82 +274,80 @@
             <line number="42" hits="0" branch="False" />
             <line number="43" hits="0" branch="False" />
             <line number="44" hits="0" branch="False" />
-            <line number="45" hits="0" branch="False" />
-            <line number="46" hits="1" branch="False" />
-            <line number="48" hits="1" branch="False" />
-            <line number="49" hits="1" branch="False" />
-            <line number="50" hits="1" branch="False" />
-            <line number="52" hits="1" branch="False" />
-            <line number="53" hits="1" branch="False" />
-            <line number="54" hits="1" branch="False" />
-            <line number="55" hits="1" branch="False" />
-            <line number="56" hits="1" branch="False" />
-            <line number="58" hits="1" branch="False" />
-            <line number="59" hits="1" branch="False" />
-            <line number="60" hits="1" branch="False" />
-            <line number="61" hits="1" branch="False" />
-            <line number="62" hits="1" branch="False" />
-            <line number="64" hits="1" branch="False" />
-            <line number="66" hits="1" branch="False" />
-            <line number="69" hits="1" branch="False" />
-            <line number="71" hits="1" branch="True" condition-coverage="50% (1/2)">
+            <line number="46" hits="0" branch="False" />
+            <line number="47" hits="0" branch="False" />
+            <line number="48" hits="0" branch="False" />
+            <line number="50" hits="0" branch="False" />
+            <line number="51" hits="0" branch="False" />
+            <line number="52" hits="0" branch="False" />
+            <line number="53" hits="0" branch="False" />
+            <line number="54" hits="0" branch="False" />
+            <line number="56" hits="0" branch="False" />
+            <line number="57" hits="0" branch="False" />
+            <line number="58" hits="0" branch="False" />
+            <line number="59" hits="0" branch="False" />
+            <line number="60" hits="0" branch="False" />
+            <line number="62" hits="0" branch="False" />
+            <line number="64" hits="0" branch="False" />
+            <line number="66" hits="0" branch="False" />
+            <line number="68" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
-                <condition number="341" type="jump" coverage="50%" />
+                <condition number="341" type="jump" coverage="0%" />
               </conditions>
             </line>
+            <line number="69" hits="0" branch="False" />
+            <line number="70" hits="0" branch="False" />
+            <line number="71" hits="0" branch="False" />
             <line number="72" hits="0" branch="False" />
             <line number="73" hits="0" branch="False" />
             <line number="74" hits="0" branch="False" />
-            <line number="75" hits="0" branch="False" />
             <line number="76" hits="0" branch="False" />
             <line number="77" hits="0" branch="False" />
-            <line number="79" hits="1" branch="False" />
-            <line number="80" hits="1" branch="False" />
-            <line number="81" hits="1" branch="False" />
-            <line number="82" hits="1" branch="False" />
-            <line number="83" hits="1" branch="False" />
-            <line number="84" hits="1" branch="False" />
-            <line number="85" hits="1" branch="False" />
-            <line number="86" hits="2" branch="False" />
-            <line number="87" hits="1" branch="False" />
-            <line number="88" hits="1" branch="False" />
-            <line number="91" hits="1" branch="False" />
-            <line number="92" hits="1" branch="False" />
-            <line number="94" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="78" hits="0" branch="False" />
+            <line number="79" hits="0" branch="False" />
+            <line number="80" hits="0" branch="False" />
+            <line number="81" hits="0" branch="False" />
+            <line number="82" hits="0" branch="False" />
+            <line number="83" hits="0" branch="False" />
+            <line number="84" hits="0" branch="False" />
+            <line number="85" hits="0" branch="False" />
+            <line number="88" hits="0" branch="False" />
+            <line number="89" hits="0" branch="False" />
+            <line number="91" hits="0" branch="True" condition-coverage="0% (0/2)">
               <conditions>
                 <condition number="21" type="jump" coverage="0%" />
               </conditions>
             </line>
+            <line number="92" hits="0" branch="False" />
+            <line number="93" hits="0" branch="False" />
+            <line number="94" hits="0" branch="False" />
             <line number="95" hits="0" branch="False" />
-            <line number="96" hits="0" branch="False" />
             <line number="97" hits="0" branch="False" />
             <line number="98" hits="0" branch="False" />
+            <line number="99" hits="0" branch="False" />
             <line number="100" hits="0" branch="False" />
-            <line number="101" hits="0" branch="False" />
             <line number="102" hits="0" branch="False" />
             <line number="103" hits="0" branch="False" />
-            <line number="105" hits="0" branch="False" />
-            <line number="106" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Backend.Services.AuthService" filename="Services\AuthService.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Backend.Services.AuthService" filename="Services\AuthService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name=".ctor" signature="(Microsoft.AspNetCore.Identity.IPasswordHasher`1&lt;Backend.Models.User&gt;,Backend.Repositories.Interfaces.IUserRepository)" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(Microsoft.AspNetCore.Identity.IPasswordHasher`1&lt;Backend.Models.User&gt;,Backend.Repositories.Interfaces.IUserRepository)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="21" hits="0" branch="False" />
-                <line number="22" hits="0" branch="False" />
-                <line number="23" hits="0" branch="False" />
-                <line number="24" hits="0" branch="False" />
-                <line number="26" hits="0" branch="False" />
+                <line number="21" hits="3" branch="False" />
+                <line number="22" hits="3" branch="False" />
+                <line number="23" hits="3" branch="False" />
+                <line number="24" hits="3" branch="False" />
+                <line number="26" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="21" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-            <line number="23" hits="0" branch="False" />
-            <line number="24" hits="0" branch="False" />
-            <line number="26" hits="0" branch="False" />
+            <line number="21" hits="3" branch="False" />
+            <line number="22" hits="3" branch="False" />
+            <line number="23" hits="3" branch="False" />
+            <line number="24" hits="3" branch="False" />
+            <line number="26" hits="3" branch="False" />
           </lines>
         </class>
         <class name="Backend.Services.AuthService/&lt;AuthenticateAsync&gt;d__3" filename="Services\AuthService.cs" line-rate="0" branch-rate="0" complexity="4">
@@ -422,202 +422,202 @@
             <line number="56" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Backend.Services.AuthService/&lt;RegisterAsync&gt;d__4" filename="Services\AuthService.cs" line-rate="0" branch-rate="0" complexity="2">
+        <class name="Backend.Services.AuthService/&lt;RegisterAsync&gt;d__4" filename="Services\AuthService.cs" line-rate="1" branch-rate="1" complexity="2">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="0" complexity="2">
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="2">
               <lines>
-                <line number="59" hits="0" branch="False" />
-                <line number="60" hits="0" branch="False" />
-                <line number="62" hits="0" branch="True" condition-coverage="0% (0/2)">
+                <line number="59" hits="3" branch="False" />
+                <line number="60" hits="3" branch="False" />
+                <line number="62" hits="3" branch="True" condition-coverage="100% (2/2)">
                   <conditions>
-                    <condition number="170" type="jump" coverage="0%" />
+                    <condition number="170" type="jump" coverage="100%" />
                   </conditions>
                 </line>
-                <line number="63" hits="0" branch="False" />
-                <line number="65" hits="0" branch="False" />
-                <line number="66" hits="0" branch="False" />
-                <line number="67" hits="0" branch="False" />
-                <line number="68" hits="0" branch="False" />
-                <line number="69" hits="0" branch="False" />
-                <line number="70" hits="0" branch="False" />
-                <line number="73" hits="0" branch="False" />
-                <line number="75" hits="0" branch="False" />
-                <line number="77" hits="0" branch="False" />
-                <line number="78" hits="0" branch="False" />
+                <line number="63" hits="1" branch="False" />
+                <line number="65" hits="2" branch="False" />
+                <line number="66" hits="2" branch="False" />
+                <line number="67" hits="2" branch="False" />
+                <line number="68" hits="2" branch="False" />
+                <line number="69" hits="2" branch="False" />
+                <line number="70" hits="2" branch="False" />
+                <line number="73" hits="2" branch="False" />
+                <line number="75" hits="2" branch="False" />
+                <line number="77" hits="2" branch="False" />
+                <line number="78" hits="3" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="59" hits="0" branch="False" />
-            <line number="60" hits="0" branch="False" />
-            <line number="62" hits="0" branch="True" condition-coverage="0% (0/2)">
+            <line number="59" hits="3" branch="False" />
+            <line number="60" hits="3" branch="False" />
+            <line number="62" hits="3" branch="True" condition-coverage="100% (2/2)">
               <conditions>
-                <condition number="170" type="jump" coverage="0%" />
+                <condition number="170" type="jump" coverage="100%" />
               </conditions>
             </line>
-            <line number="63" hits="0" branch="False" />
-            <line number="65" hits="0" branch="False" />
-            <line number="66" hits="0" branch="False" />
-            <line number="67" hits="0" branch="False" />
-            <line number="68" hits="0" branch="False" />
-            <line number="69" hits="0" branch="False" />
-            <line number="70" hits="0" branch="False" />
-            <line number="73" hits="0" branch="False" />
-            <line number="75" hits="0" branch="False" />
-            <line number="77" hits="0" branch="False" />
-            <line number="78" hits="0" branch="False" />
+            <line number="63" hits="1" branch="False" />
+            <line number="65" hits="2" branch="False" />
+            <line number="66" hits="2" branch="False" />
+            <line number="67" hits="2" branch="False" />
+            <line number="68" hits="2" branch="False" />
+            <line number="69" hits="2" branch="False" />
+            <line number="70" hits="2" branch="False" />
+            <line number="73" hits="2" branch="False" />
+            <line number="75" hits="2" branch="False" />
+            <line number="77" hits="2" branch="False" />
+            <line number="78" hits="3" branch="False" />
           </lines>
         </class>
-        <class name="Backend.Services.DatabaseConfigService" filename="Services\DatabaseConfigService.cs" line-rate="1" branch-rate="1" complexity="2">
+        <class name="Backend.Services.DatabaseConfigService" filename="Services\DatabaseConfigService.cs" line-rate="0" branch-rate="1" complexity="2">
           <methods>
-            <method name="GetConnectionString" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="GetConnectionString" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="15" hits="1" branch="False" />
-                <line number="16" hits="1" branch="False" />
-                <line number="17" hits="1" branch="False" />
-                <line number="19" hits="1" branch="False" />
-                <line number="20" hits="1" branch="False" />
-                <line number="21" hits="1" branch="False" />
-                <line number="24" hits="1" branch="False" />
-                <line number="27" hits="1" branch="False" />
-              </lines>
-            </method>
-            <method name=".ctor" signature="(Microsoft.Extensions.Configuration.IConfiguration)" line-rate="1" branch-rate="1" complexity="1">
-              <lines>
-                <line number="9" hits="1" branch="False" />
-                <line number="10" hits="1" branch="False" />
-                <line number="11" hits="1" branch="False" />
-                <line number="12" hits="1" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="15" hits="1" branch="False" />
-            <line number="16" hits="1" branch="False" />
-            <line number="17" hits="1" branch="False" />
-            <line number="19" hits="1" branch="False" />
-            <line number="20" hits="1" branch="False" />
-            <line number="21" hits="1" branch="False" />
-            <line number="24" hits="1" branch="False" />
-            <line number="27" hits="1" branch="False" />
-            <line number="9" hits="1" branch="False" />
-            <line number="10" hits="1" branch="False" />
-            <line number="11" hits="1" branch="False" />
-            <line number="12" hits="1" branch="False" />
-          </lines>
-        </class>
-        <class name="Backend.Services.PizzaService" filename="Services\PizzaService.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name=".ctor" signature="(Backend.Repositories.Interfaces.IPizzaRepository)" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="14" hits="0" branch="False" />
                 <line number="15" hits="0" branch="False" />
                 <line number="16" hits="0" branch="False" />
                 <line number="17" hits="0" branch="False" />
+                <line number="19" hits="0" branch="False" />
+                <line number="20" hits="0" branch="False" />
+                <line number="21" hits="0" branch="False" />
+                <line number="24" hits="0" branch="False" />
+                <line number="27" hits="0" branch="False" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(Microsoft.Extensions.Configuration.IConfiguration)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="0" branch="False" />
+                <line number="10" hits="0" branch="False" />
+                <line number="11" hits="0" branch="False" />
+                <line number="12" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="14" hits="0" branch="False" />
             <line number="15" hits="0" branch="False" />
             <line number="16" hits="0" branch="False" />
             <line number="17" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="Backend.Services.PizzaService/&lt;AddAsync&gt;d__5" filename="Services\PizzaService.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="33" hits="0" branch="False" />
-                <line number="34" hits="0" branch="False" />
-                <line number="35" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="33" hits="0" branch="False" />
-            <line number="34" hits="0" branch="False" />
-            <line number="35" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="Backend.Services.PizzaService/&lt;DeleteAsync&gt;d__7" filename="Services\PizzaService.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="43" hits="0" branch="False" />
-                <line number="44" hits="0" branch="False" />
-                <line number="45" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="43" hits="0" branch="False" />
-            <line number="44" hits="0" branch="False" />
-            <line number="45" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="Backend.Services.PizzaService/&lt;UpdateAsync&gt;d__6" filename="Services\PizzaService.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="38" hits="0" branch="False" />
-                <line number="39" hits="0" branch="False" />
-                <line number="41" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
-            <line number="38" hits="0" branch="False" />
-            <line number="39" hits="0" branch="False" />
-            <line number="41" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="Backend.Services.PizzaService/&lt;getAllAsync&gt;d__2" filename="Services\PizzaService.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="20" hits="0" branch="False" />
-                <line number="21" hits="0" branch="False" />
-                <line number="22" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
+            <line number="19" hits="0" branch="False" />
             <line number="20" hits="0" branch="False" />
             <line number="21" hits="0" branch="False" />
-            <line number="22" hits="0" branch="False" />
-          </lines>
-        </class>
-        <class name="Backend.Services.PizzaService/&lt;getByIdAsync&gt;d__3" filename="Services\PizzaService.cs" line-rate="0" branch-rate="1" complexity="1">
-          <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
-              <lines>
-                <line number="24" hits="0" branch="False" />
-                <line number="25" hits="0" branch="False" />
-                <line number="26" hits="0" branch="False" />
-              </lines>
-            </method>
-          </methods>
-          <lines>
             <line number="24" hits="0" branch="False" />
-            <line number="25" hits="0" branch="False" />
-            <line number="26" hits="0" branch="False" />
+            <line number="27" hits="0" branch="False" />
+            <line number="9" hits="0" branch="False" />
+            <line number="10" hits="0" branch="False" />
+            <line number="11" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Backend.Services.PizzaService/&lt;getByNameAsync&gt;d__4" filename="Services\PizzaService.cs" line-rate="0" branch-rate="1" complexity="1">
+        <class name="Backend.Services.PizzaService" filename="Services\PizzaService.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
-            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(Backend.Repositories.Interfaces.IPizzaRepository)" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="28" hits="0" branch="False" />
-                <line number="29" hits="0" branch="False" />
-                <line number="31" hits="0" branch="False" />
+                <line number="14" hits="8" branch="False" />
+                <line number="15" hits="8" branch="False" />
+                <line number="16" hits="8" branch="False" />
+                <line number="17" hits="8" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="28" hits="0" branch="False" />
-            <line number="29" hits="0" branch="False" />
-            <line number="31" hits="0" branch="False" />
+            <line number="14" hits="8" branch="False" />
+            <line number="15" hits="8" branch="False" />
+            <line number="16" hits="8" branch="False" />
+            <line number="17" hits="8" branch="False" />
+          </lines>
+        </class>
+        <class name="Backend.Services.PizzaService/&lt;AddAsync&gt;d__5" filename="Services\PizzaService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="33" hits="1" branch="False" />
+                <line number="34" hits="1" branch="False" />
+                <line number="35" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="33" hits="1" branch="False" />
+            <line number="34" hits="1" branch="False" />
+            <line number="35" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="Backend.Services.PizzaService/&lt;DeleteAsync&gt;d__7" filename="Services\PizzaService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="43" hits="2" branch="False" />
+                <line number="44" hits="2" branch="False" />
+                <line number="45" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="43" hits="2" branch="False" />
+            <line number="44" hits="2" branch="False" />
+            <line number="45" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="Backend.Services.PizzaService/&lt;UpdateAsync&gt;d__6" filename="Services\PizzaService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="38" hits="2" branch="False" />
+                <line number="39" hits="2" branch="False" />
+                <line number="41" hits="2" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="38" hits="2" branch="False" />
+            <line number="39" hits="2" branch="False" />
+            <line number="41" hits="2" branch="False" />
+          </lines>
+        </class>
+        <class name="Backend.Services.PizzaService/&lt;getAllAsync&gt;d__2" filename="Services\PizzaService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="20" hits="1" branch="False" />
+                <line number="21" hits="1" branch="False" />
+                <line number="22" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="20" hits="1" branch="False" />
+            <line number="21" hits="1" branch="False" />
+            <line number="22" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="Backend.Services.PizzaService/&lt;getByIdAsync&gt;d__3" filename="Services\PizzaService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="24" hits="1" branch="False" />
+                <line number="25" hits="1" branch="False" />
+                <line number="26" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="24" hits="1" branch="False" />
+            <line number="25" hits="1" branch="False" />
+            <line number="26" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="Backend.Services.PizzaService/&lt;getByNameAsync&gt;d__4" filename="Services\PizzaService.cs" line-rate="1" branch-rate="1" complexity="1">
+          <methods>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="1" branch="False" />
+                <line number="29" hits="1" branch="False" />
+                <line number="31" hits="1" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="28" hits="1" branch="False" />
+            <line number="29" hits="1" branch="False" />
+            <line number="31" hits="1" branch="False" />
           </lines>
         </class>
         <class name="Backend.Repositories.PizzaRepository" filename="Repositories\PizzaRepository.cs" line-rate="0" branch-rate="1" complexity="1">
@@ -876,112 +876,112 @@
             <line number="6" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Backend.Models.Pizza" filename="Models\Pizza.cs" line-rate="0" branch-rate="1" complexity="5">
+        <class name="Backend.Models.Pizza" filename="Models\Pizza.cs" line-rate="1" branch-rate="1" complexity="5">
           <methods>
-            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Id" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="0" branch="False" />
+                <line number="9" hits="7" branch="False" />
               </lines>
             </method>
-            <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="0" branch="False" />
+                <line number="10" hits="11" branch="False" />
               </lines>
             </method>
-            <method name="get_IseGluteneFree" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_IseGluteneFree" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="0" branch="False" />
+                <line number="11" hits="9" branch="False" />
               </lines>
             </method>
-            <method name="get_IsDeleted" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_IsDeleted" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="0" branch="False" />
+                <line number="12" hits="7" branch="False" />
               </lines>
             </method>
-            <method name="get_IsModified" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_IsModified" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="13" hits="0" branch="False" />
+                <line number="13" hits="7" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="9" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
-            <line number="13" hits="0" branch="False" />
+            <line number="9" hits="7" branch="False" />
+            <line number="10" hits="11" branch="False" />
+            <line number="11" hits="9" branch="False" />
+            <line number="12" hits="7" branch="False" />
+            <line number="13" hits="7" branch="False" />
           </lines>
         </class>
-        <class name="Backend.Models.RegisterModel" filename="Models\RegisterModel.cs" line-rate="0" branch-rate="1" complexity="5">
+        <class name="Backend.Models.RegisterModel" filename="Models\RegisterModel.cs" line-rate="0.8" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
                 <line number="5" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="6" hits="0" branch="False" />
+                <line number="6" hits="8" branch="False" />
               </lines>
             </method>
-            <method name="get_HashedPassword" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_HashedPassword" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="7" hits="0" branch="False" />
+                <line number="7" hits="5" branch="False" />
               </lines>
             </method>
-            <method name="get_PhoneNumber" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_PhoneNumber" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="8" hits="0" branch="False" />
+                <line number="8" hits="5" branch="False" />
               </lines>
             </method>
-            <method name="get_Address" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Address" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="0" branch="False" />
+                <line number="9" hits="5" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
             <line number="5" hits="0" branch="False" />
-            <line number="6" hits="0" branch="False" />
-            <line number="7" hits="0" branch="False" />
-            <line number="8" hits="0" branch="False" />
-            <line number="9" hits="0" branch="False" />
+            <line number="6" hits="8" branch="False" />
+            <line number="7" hits="5" branch="False" />
+            <line number="8" hits="5" branch="False" />
+            <line number="9" hits="5" branch="False" />
           </lines>
         </class>
-        <class name="Backend.Models.User" filename="Models\User.cs" line-rate="0" branch-rate="1" complexity="5">
+        <class name="Backend.Models.User" filename="Models\User.cs" line-rate="0.8" branch-rate="1" complexity="5">
           <methods>
             <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
                 <line number="8" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_Name" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Name" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="9" hits="0" branch="False" />
+                <line number="9" hits="2" branch="False" />
               </lines>
             </method>
-            <method name="get_HashedPassword" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_HashedPassword" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="10" hits="0" branch="False" />
+                <line number="10" hits="2" branch="False" />
               </lines>
             </method>
-            <method name="get_PhoneNumber" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_PhoneNumber" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="11" hits="0" branch="False" />
+                <line number="11" hits="2" branch="False" />
               </lines>
             </method>
-            <method name="get_Address" signature="()" line-rate="0" branch-rate="1" complexity="1">
+            <method name="get_Address" signature="()" line-rate="1" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="0" branch="False" />
+                <line number="12" hits="2" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
             <line number="8" hits="0" branch="False" />
-            <line number="9" hits="0" branch="False" />
-            <line number="10" hits="0" branch="False" />
-            <line number="11" hits="0" branch="False" />
-            <line number="12" hits="0" branch="False" />
+            <line number="9" hits="2" branch="False" />
+            <line number="10" hits="2" branch="False" />
+            <line number="11" hits="2" branch="False" />
+            <line number="12" hits="2" branch="False" />
           </lines>
         </class>
         <class name="Backend.Migrations.pizzasInit" filename="Migrations\20250507230705_pizzasInit.cs" line-rate="0" branch-rate="1" complexity="2">
@@ -1506,32 +1506,32 @@
             <line number="77" hits="0" branch="False" />
           </lines>
         </class>
-        <class name="Backend.Data.AppDbContext" filename="Data\DbContext.cs" line-rate="1" branch-rate="1" complexity="3">
+        <class name="Backend.Data.AppDbContext" filename="Data\DbContext.cs" line-rate="0" branch-rate="1" complexity="3">
           <methods>
-            <method name="get_Pizzas" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="get_Pizzas" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="16" hits="1" branch="False" />
+                <line number="16" hits="0" branch="False" />
               </lines>
             </method>
-            <method name="get_Users" signature="()" line-rate="1" branch-rate="1" complexity="1">
+            <method name="get_Users" signature="()" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="17" hits="1" branch="False" />
+                <line number="17" hits="0" branch="False" />
               </lines>
             </method>
-            <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions`1&lt;Backend.Data.AppDbContext&gt;)" line-rate="1" branch-rate="1" complexity="1">
+            <method name=".ctor" signature="(Microsoft.EntityFrameworkCore.DbContextOptions`1&lt;Backend.Data.AppDbContext&gt;)" line-rate="0" branch-rate="1" complexity="1">
               <lines>
-                <line number="12" hits="1" branch="False" />
-                <line number="13" hits="1" branch="False" />
-                <line number="14" hits="1" branch="False" />
+                <line number="12" hits="0" branch="False" />
+                <line number="13" hits="0" branch="False" />
+                <line number="14" hits="0" branch="False" />
               </lines>
             </method>
           </methods>
           <lines>
-            <line number="16" hits="1" branch="False" />
-            <line number="17" hits="1" branch="False" />
-            <line number="12" hits="1" branch="False" />
-            <line number="13" hits="1" branch="False" />
-            <line number="14" hits="1" branch="False" />
+            <line number="16" hits="0" branch="False" />
+            <line number="17" hits="0" branch="False" />
+            <line number="12" hits="0" branch="False" />
+            <line number="13" hits="0" branch="False" />
+            <line number="14" hits="0" branch="False" />
           </lines>
         </class>
         <class name="Backend.Controllers.AuthController" filename="Controllers\AuthController.cs" line-rate="0" branch-rate="1" complexity="1">
