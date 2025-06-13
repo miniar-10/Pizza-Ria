@@ -9,6 +9,12 @@ on:
       - main
 
 jobs:
+  format-analyse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Code Format
+        run: dotnet format Backend/Backend.sln --verify-no-changes --verbosity diag
   build-test:
     runs-on: ubuntu-latest
 
@@ -41,3 +47,4 @@ jobs:
         with:
           name: coverage-report
           path: coverage-report
+      
