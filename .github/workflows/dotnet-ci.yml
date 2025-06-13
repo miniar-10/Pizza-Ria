@@ -31,12 +31,12 @@ jobs:
       run: dotnet test BackendTest/BackendTest.csproj --no-build --verbosity normal
 
     - name: Add Test Coverage
-      run: dotnet test --collect:"XPlat Code Coverage"
+      run: dotnet test Backend/Backend.sln --collect:"XPlat Code Coverage"
 
 
-    - name: Install ReportGenerator
-      run: dotnet tool install --global dotnet-reportgenerator-globaltool
+    # - name: Install ReportGenerator
+    #   run: dotnet tool install --global dotnet-reportgenerator-globaltool
     
-    - name: Generate Coverage Report
-      run: reportgenerator -reports:**/coverage.cobertura.xml -targetdir:coverage-report -reporttypes:Html
+    # - name: Generate Coverage Report
+    #   run: reportgenerator -reports:**/coverage.cobertura.xml -targetdir:coverage-report -reporttypes:Html
     
