@@ -11,12 +11,14 @@ on:
 jobs:
   format-analyse:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Show directory contents
-        run: ls -la
-      - name: Check Code Format
-        run: dotnet format --verify-no-changes --verbosity diag
+        - name: Checkout repository
+          uses: actions/checkout@v3
+        - name: Show directory contents
+          run: ls -la
+        - name: Check Code Format
+          run: dotnet format --verify-no-changes --verbosity diag
+
   build-test:
     runs-on: ubuntu-latest
 
