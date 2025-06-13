@@ -1,15 +1,17 @@
-using Backend.Data;
+﻿using Backend.Data;
 using Backend.Models;
-using Backend.Repositories.Interfaces;
 using Backend.Repositories;
-using Backend.Services.Interfaces;
+using Backend.Repositories.Interfaces;
 using Backend.Services;
+using Backend.Services.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System.Text;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.InMemory;
 
 
 public class Program
@@ -17,7 +19,13 @@ public class Program
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
+        ConfigureServices(builder);
+        var app = ConfigureMiddleware(builder);
+        app.Run();
+    }
 
+    public static void ConfigureServices(WebApplicationBuilder builder)
+    {
         var key = "this is a Super Secure password 1234";
 
         builder.Services.AddAuthentication(options =>
@@ -39,43 +47,13 @@ public class Program
 
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
-        builder.Services.AddSwaggerGen(c =>
-        {
-            c.SwaggerDoc("v1", new() { Title = "My API", Version = "v1" });
-
-            c.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
-            {
-                Name = "Authorization",
-                Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
-                Scheme = "Bearer",
-                BearerFormat = "JWT",
-                In = Microsoft.OpenApi.Models.ParameterLocation.Header,
-                Description = "Enter 'Bearer' [space] and then your token.\n\nExample: Bearer abc123token"
-            });
-
-            c.AddSecurityRequirement(new Microsoft.OpenApi.Models.OpenApiSecurityRequirement
-            {
-                {
-                    new Microsoft.OpenApi.Models.OpenApiSecurityScheme
-                    {
-                        Reference = new Microsoft.OpenApi.Models.OpenApiReference
-                        {
-                            Type = Microsoft.OpenApi.Models.ReferenceType.SecurityScheme,
-                            Id = "Bearer"
-                        }
-                    },
-                    Array.Empty<string>()
-                }
-            });
-        });
+        builder.Services.AddSwaggerGen();
 
         builder.Services.AddScoped<IPizzaRepository, PizzaRepository>();
         builder.Services.AddScoped<IPizzaService, PizzaService>();
         builder.Services.AddScoped<IUserRepository, UserRepository>();
         builder.Services.AddScoped<IAuthService, AuthService>();
         builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
-
-        builder.Services.AddSingleton<DatabaseConfigService>();
 
         Log.Logger = new LoggerConfiguration()
             .WriteTo.Console()
@@ -84,15 +62,33 @@ public class Program
             .CreateLogger();
 
         builder.Host.UseSerilog();
+
         DotNetEnv.Env.Load();
 
-        builder.Services.AddDbContext<AppDbContext>((serviceProvider, options) =>
-        {
-            var configService = serviceProvider.GetRequiredService<DatabaseConfigService>();
-            var connectionString = configService.GetConnectionString();
-            options.UseNpgsql(connectionString);
-        });
+        // ⬇️ Conditional provider registration to avoid conflicts in tests
+        var useInMemory = builder.Configuration.GetValue<bool>("UseInMemoryDb");
 
+        if (useInMemory)
+        {
+            builder.Services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseInMemoryDatabase("TestDb");
+            });
+        }
+        else
+        {
+            builder.Services.AddSingleton<DatabaseConfigService>();
+            builder.Services.AddDbContext<AppDbContext>((sp, options) =>
+            {
+                var configService = sp.GetRequiredService<DatabaseConfigService>();
+                var connectionString = configService.GetConnectionString();
+                options.UseNpgsql(connectionString);
+            });
+        }
+    }
+
+    public static WebApplication ConfigureMiddleware(WebApplicationBuilder builder)
+    {
         var app = builder.Build();
 
         if (app.Environment.IsDevelopment())
@@ -106,6 +102,7 @@ public class Program
         app.UseAuthorization();
         app.MapControllers();
 
-        app.Run();
+        return app;
     }
 }
+

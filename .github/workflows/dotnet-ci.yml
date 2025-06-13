@@ -26,13 +26,17 @@ jobs:
 
     - name: Build
       run: dotnet build Backend/Backend.sln --no-restore
-
-    - name: Build IntegrationTests project
-      run: dotnet build IntegrationTests/IntegrationTests.csproj 
-
     
     - name: Run Tests
       run: dotnet test BackendTest/BackendTest.csproj --no-build --verbosity normal
 
-    - name: Run Integration Tests
-      run: dotnet test IntegrationTests/IntegrationTests.csproj --no-build --verbosity normal
+    - name: Add Test Coverage
+      run: dotnet test --collect:"XPlat Code Coverage"
+
+
+    - name: Install ReportGenerator
+      run: dotnet tool install --global dotnet-reportgenerator-globaltool
+    
+    - name: Generate Coverage Report
+      run: reportgenerator -reports:**/coverage.cobertura.xml -targetdir:coverage-report -reporttypes:Html
+    

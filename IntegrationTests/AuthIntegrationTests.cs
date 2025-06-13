@@ -21,11 +21,20 @@ namespace IntegrationTests
         {
             var payload = new StringContent(JsonConvert.SerializeObject(new
             {
-                Name = "test",
-                Password = "123"
+                name = "test1",
+                hashedPassword = "123",
+                address=""
             }), Encoding.UTF8, "application/json");
 
             var response = await _client.PostAsync("/api/auth/register", payload);
+
+            var responseBody = await response.Content.ReadAsStringAsync();
+
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception($"Status: {(int)response.StatusCode}\nBody: {responseBody}");
+            }
+
             response.EnsureSuccessStatusCode();
         }
     }
