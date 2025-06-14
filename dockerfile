@@ -1,5 +1,5 @@
 # TODO: 1. Use the .NET SDK image to build the app 
-FROM mcr.microsoft.com/dotnet/sdk:7.0 AS build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # TODO: 2. Copy only the Backend project files and restore
@@ -16,12 +16,12 @@ WORKDIR /src/Backend
 RUN dotnet publish -c Release -o /app/publish
 
 # TODO: 5. Use the ASP.NET runtime image to run the app
-FROM mcr.microsoft.com/dotnet/aspnet:7.0
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/publish .
 
 # TODO:6. Expose the port that my app runs on 
-EXPOSE 80
+EXPOSE 8080
 
 # TODO: 7. Run the app 
 ENTRYPOINT ["dotnet", "Backend.dll"]

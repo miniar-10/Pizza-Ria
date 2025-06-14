@@ -42,6 +42,7 @@ public partial class Program // 👈 no need to make *this* class partial
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key))
             };
         });
+        builder.WebHost.UseUrls("http://0.0.0.0:8080");
 
         builder.Services.AddControllers();
         builder.Services.AddEndpointsApiExplorer();
