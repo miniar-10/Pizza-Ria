@@ -12,13 +12,20 @@ using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System.Text;
 
-public partial class Program // 👈 no need to make *this* class partial
+public partial class Program 
 {
     public static void Main(string[] args)
     {
         var builder = WebApplication.CreateBuilder(args);
         ConfigureServices(builder);
         var app = ConfigureMiddleware(builder);
+
+        using (var scope = app.Services.CreateScope())
+        {
+            var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            db.Database.Migrate();
+        }
+
         app.Run();
     }
 
@@ -42,6 +49,8 @@ public partial class Program // 👈 no need to make *this* class partial
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key))
             };
         });
+
+        // Bind to all network interfaces on port 8080
         builder.WebHost.UseUrls("http://0.0.0.0:8080");
 
         builder.Services.AddControllers();

@@ -23,5 +23,8 @@ COPY --from=build /app/publish .
 # TODO:6. Expose the port that my app runs on 
 EXPOSE 8080
 
-# TODO: 7. Run the app 
-ENTRYPOINT ["dotnet", "Backend.dll"]
+#TODO:7. Add wait for it so the container waits for the db service to be up 
+COPY wait-for-it.sh /wait-for-it.sh
+
+# TODO: 8. Run the app 
+ENTRYPOINT ["/wait-for-it.sh", "db:5432", "--","dotnet", "Backend.dll"]

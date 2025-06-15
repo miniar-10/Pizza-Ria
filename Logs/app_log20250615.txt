@@ -1,0 +1,181 @@
+2025-06-15 08:46:45.220 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-06-15 08:46:45.263 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-15 08:46:45.281 +00:00 [INF] Creating key {16c08059-f691-4d80-ac2c-cd4147696bd8} with creation date 2025-06-15 08:46:45Z, activation date 2025-06-15 08:46:45Z, and expiration date 2025-09-13 08:46:45Z.
+2025-06-15 08:46:45.295 +00:00 [WRN] No XML encryptor configured. Key {16c08059-f691-4d80-ac2c-cd4147696bd8} may be persisted to storage in unencrypted form.
+2025-06-15 08:46:45.299 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-16c08059-f691-4d80-ac2c-cd4147696bd8.xml'.
+2025-06-15 08:46:45.313 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+2025-06-15 08:46:45.364 +00:00 [INF] Now listening on: http://0.0.0.0:8080
+2025-06-15 08:46:45.364 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-15 08:46:45.365 +00:00 [INF] Hosting environment: Development
+2025-06-15 08:46:45.365 +00:00 [INF] Content root path: /app
+2025-06-15 08:47:17.486 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-06-15 08:47:17.604 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 118.6113ms
+2025-06-15 08:50:12.051 +00:00 [INF] Application is shutting down...
+2025-06-15 08:50:29.270 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-06-15 08:50:29.305 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-15 08:50:29.319 +00:00 [INF] Creating key {f3dda8d1-421f-4240-8c46-4d31abc1def3} with creation date 2025-06-15 08:50:29Z, activation date 2025-06-15 08:50:29Z, and expiration date 2025-09-13 08:50:29Z.
+2025-06-15 08:50:29.330 +00:00 [WRN] No XML encryptor configured. Key {f3dda8d1-421f-4240-8c46-4d31abc1def3} may be persisted to storage in unencrypted form.
+2025-06-15 08:50:29.334 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-f3dda8d1-421f-4240-8c46-4d31abc1def3.xml'.
+2025-06-15 08:50:29.345 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+2025-06-15 08:50:29.385 +00:00 [INF] Now listening on: http://0.0.0.0:8080
+2025-06-15 08:50:29.385 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-15 08:50:29.385 +00:00 [INF] Hosting environment: Development
+2025-06-15 08:50:29.386 +00:00 [INF] Content root path: /app
+2025-06-15 08:50:56.459 +00:00 [INF] Application is shutting down...
+2025-06-15 09:05:24.355 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-06-15 09:05:24.411 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-15 09:05:24.427 +00:00 [INF] Creating key {edbf952a-c7c8-4465-b8d7-7d8a8054dab2} with creation date 2025-06-15 09:05:24Z, activation date 2025-06-15 09:05:24Z, and expiration date 2025-09-13 09:05:24Z.
+2025-06-15 09:05:24.457 +00:00 [WRN] No XML encryptor configured. Key {edbf952a-c7c8-4465-b8d7-7d8a8054dab2} may be persisted to storage in unencrypted form.
+2025-06-15 09:05:24.461 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-edbf952a-c7c8-4465-b8d7-7d8a8054dab2.xml'.
+2025-06-15 09:05:24.474 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+2025-06-15 09:05:24.527 +00:00 [INF] Now listening on: http://0.0.0.0:8080
+2025-06-15 09:05:24.527 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-15 09:05:24.528 +00:00 [INF] Hosting environment: Development
+2025-06-15 09:05:24.528 +00:00 [INF] Content root path: /app
+2025-06-15 09:42:28.456 +00:00 [INF] Application is shutting down...
+2025-06-15 09:42:46.205 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-06-15 09:42:46.261 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-15 09:42:46.400 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+2025-06-15 09:42:46.442 +00:00 [INF] Now listening on: http://0.0.0.0:8080
+2025-06-15 09:42:46.442 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-15 09:42:46.442 +00:00 [INF] Hosting environment: Development
+2025-06-15 09:42:46.442 +00:00 [INF] Content root path: /app
+2025-06-15 09:42:50.521 +00:00 [INF] Application is shutting down...
+2025-06-15 09:42:58.833 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-06-15 09:42:58.859 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-15 09:42:58.883 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+2025-06-15 09:42:58.915 +00:00 [INF] Now listening on: http://0.0.0.0:8080
+2025-06-15 09:42:58.915 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-15 09:42:58.915 +00:00 [INF] Hosting environment: Development
+2025-06-15 09:42:58.915 +00:00 [INF] Content root path: /app
+2025-06-15 09:43:25.498 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-06-15 09:43:25.745 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 249.2714ms
+2025-06-15 15:44:18.244 +00:00 [INF] Application is shutting down...
+2025-06-15 16:43:29.738 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-06-15 16:43:29.767 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-15 16:43:29.780 +00:00 [INF] Creating key {5f875ba6-c757-462b-a96c-c32f718b63af} with creation date 2025-06-15 16:43:29Z, activation date 2025-06-15 16:43:29Z, and expiration date 2025-09-13 16:43:29Z.
+2025-06-15 16:43:29.817 +00:00 [WRN] No XML encryptor configured. Key {5f875ba6-c757-462b-a96c-c32f718b63af} may be persisted to storage in unencrypted form.
+2025-06-15 16:43:29.820 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-5f875ba6-c757-462b-a96c-c32f718b63af.xml'.
+2025-06-15 16:43:29.828 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+2025-06-15 16:43:30.003 +00:00 [INF] Now listening on: http://0.0.0.0:8080
+2025-06-15 16:43:30.004 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-15 16:43:30.004 +00:00 [INF] Hosting environment: Development
+2025-06-15 16:43:30.004 +00:00 [INF] Content root path: /app
+2025-06-15 17:12:13.585 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-06-15 17:12:14.223 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 640.7459ms
+2025-06-15 17:12:17.684 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-06-15 17:12:18.105 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 422.7602ms
+2025-06-15 17:12:29.722 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - null null
+2025-06-15 17:12:29.726 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - 200 null text/html;charset=utf-8 3.6229ms
+2025-06-15 17:12:32.461 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-06-15 17:12:32.469 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.4789ms
+2025-06-15 17:12:32.482 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - null null
+2025-06-15 17:12:32.605 +00:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-06-15 17:12:32.605 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - 200 628 image/png 122.747ms
+2025-06-15 17:25:07.159 +00:00 [INF] Application is shutting down...
+2025-06-15 17:41:58.804 +00:00 [ERR] An error occurred using the connection to database '' on server ''.
+2025-06-15 18:18:51.014 +00:00 [ERR] An error occurred using the connection to database '' on server ''.
+2025-06-15 18:42:37.485 +00:00 [ERR] An error occurred using the connection to database '' on server ''.
+2025-06-15 20:19:09.387 +00:00 [ERR] An error occurred using the connection to database '' on server ''.
+2025-06-15 20:50:12.277 +00:00 [ERR] An error occurred using the connection to database 'appdb' on server 'tcp://localhost:5432'.
+2025-06-15 21:00:49.833 +00:00 [ERR] An error occurred using the connection to database 'appdb' on server 'tcp://db:5432'.
+2025-06-15 21:12:38.675 +00:00 [ERR] Failed executing DbCommand (169ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-06-15 21:12:39.196 +00:00 [INF] Acquiring an exclusive lock for migration application. See https://aka.ms/efcore-docs-migrations-lock for more information if this takes too long.
+2025-06-15 21:12:39.201 +00:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+LOCK TABLE "__EFMigrationsHistory" IN ACCESS EXCLUSIVE MODE
+2025-06-15 21:12:39.265 +00:00 [INF] Executed DbCommand (63ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "MigrationId", "ProductVersion"
+FROM "__EFMigrationsHistory"
+ORDER BY "MigrationId";
+2025-06-15 21:12:39.313 +00:00 [INF] Applying migration '20250507230705_pizzasInit'.
+2025-06-15 21:12:39.520 +00:00 [INF] Executed DbCommand (196ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Pizzas" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "Name" text,
+    "IseGluteneFree" boolean NOT NULL,
+    "IsDeleted" boolean NOT NULL,
+    "IsModified" boolean NOT NULL,
+    CONSTRAINT "PK_Pizzas" PRIMARY KEY ("Id")
+);
+2025-06-15 21:12:39.521 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250507230705_pizzasInit', '9.0.4');
+2025-06-15 21:12:39.522 +00:00 [INF] Applying migration '20250601140737_loginModel_table'.
+2025-06-15 21:12:39.523 +00:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250601140737_loginModel_table', '9.0.4');
+2025-06-15 21:12:39.537 +00:00 [INF] Applying migration '20250601145726_CreateUserTable'.
+2025-06-15 21:12:39.840 +00:00 [INF] Executed DbCommand (298ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Users" (
+    "Id" integer GENERATED BY DEFAULT AS IDENTITY,
+    "Name" text NOT NULL,
+    "HashedPassword" text NOT NULL,
+    "PhoneNumber" double precision NOT NULL,
+    "Address" text NOT NULL,
+    CONSTRAINT "PK_Users" PRIMARY KEY ("Id")
+);
+2025-06-15 21:12:39.841 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250601145726_CreateUserTable', '9.0.4');
+2025-06-15 21:12:39.841 +00:00 [INF] Applying migration '20250615201555_InitialCreate'.
+2025-06-15 21:12:39.857 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Users" ALTER COLUMN "PhoneNumber" DROP NOT NULL;
+2025-06-15 21:12:39.858 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Users" ALTER COLUMN "HashedPassword" DROP NOT NULL;
+2025-06-15 21:12:39.859 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Users" ALTER COLUMN "Address" DROP NOT NULL;
+2025-06-15 21:12:39.860 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Pizzas" ALTER COLUMN "IseGluteneFree" DROP NOT NULL;
+2025-06-15 21:12:39.861 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Pizzas" ALTER COLUMN "IsModified" DROP NOT NULL;
+2025-06-15 21:12:39.862 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+ALTER TABLE "Pizzas" ALTER COLUMN "IsDeleted" DROP NOT NULL;
+2025-06-15 21:12:39.863 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "__EFMigrationsHistory" ("MigrationId", "ProductVersion")
+VALUES ('20250615201555_InitialCreate', '9.0.4');
+2025-06-15 21:12:40.062 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2025-06-15 21:12:40.063 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2025-06-15 21:12:40.159 +00:00 [INF] Creating key {9ecad795-3f91-47c6-a875-237d0d2e5b83} with creation date 2025-06-15 21:12:40Z, activation date 2025-06-15 21:12:40Z, and expiration date 2025-09-13 21:12:40Z.
+2025-06-15 21:12:40.262 +00:00 [WRN] No XML encryptor configured. Key {9ecad795-3f91-47c6-a875-237d0d2e5b83} may be persisted to storage in unencrypted form.
+2025-06-15 21:12:40.282 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-9ecad795-3f91-47c6-a875-237d0d2e5b83.xml'.
+2025-06-15 21:12:40.416 +00:00 [WRN] Overriding HTTP_PORTS '8080' and HTTPS_PORTS ''. Binding to values defined by URLS instead 'http://0.0.0.0:8080'.
+2025-06-15 21:12:41.441 +00:00 [INF] Now listening on: http://0.0.0.0:8080
+2025-06-15 21:12:41.442 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-06-15 21:12:41.442 +00:00 [INF] Hosting environment: Development
+2025-06-15 21:12:41.442 +00:00 [INF] Content root path: /app
+2025-06-15 21:13:19.084 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-06-15 21:13:20.039 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 950.1952ms
+2025-06-15 21:14:07.057 +00:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - null null
+2025-06-15 21:14:07.062 +00:00 [INF] Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.1162ms
+2025-06-15 21:14:40.956 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/register - application/json 97
+2025-06-15 21:14:40.964 +00:00 [WRN] Failed to determine the https port for redirect.
+2025-06-15 21:14:41.321 +00:00 [INF] Executing endpoint 'Backend.Controllers.AuthController.Register (Backend)'
+2025-06-15 21:14:41.743 +00:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(Backend.Models.RegisterModel) on controller Backend.Controllers.AuthController (Backend).
+2025-06-15 21:14:43.048 +00:00 [INF] Executed DbCommand (36ms) [Parameters=[@__name_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Users" AS u
+    WHERE u."Name" = @__name_0)
+2025-06-15 21:14:43.440 +00:00 [INF] Executed DbCommand (33ms) [Parameters=[@p0='?', @p1='?', @p2='?', @p3='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Users" ("Address", "HashedPassword", "Name", "PhoneNumber")
+VALUES (@p0, @p1, @p2, @p3)
+RETURNING "Id";
+2025-06-15 21:14:43.483 +00:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2025-06-15 21:14:43.495 +00:00 [INF] Executed action Backend.Controllers.AuthController.Register (Backend) in 1719.1129ms
+2025-06-15 21:14:43.496 +00:00 [INF] Executed endpoint 'Backend.Controllers.AuthController.Register (Backend)'
+2025-06-15 21:14:43.502 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/register - 200 null text/plain; charset=utf-8 2546.3651ms
+2025-06-15 21:15:20.571 +00:00 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/Auth/login - application/json 53
+2025-06-15 21:15:20.575 +00:00 [INF] Executing endpoint 'Backend.Controllers.AuthController.Login (Backend)'
+2025-06-15 21:15:20.581 +00:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(Backend.Models.LoginModel) on controller Backend.Controllers.AuthController (Backend).
+2025-06-15 21:15:20.686 +00:00 [INF] Executed DbCommand (1ms) [Parameters=[@__name_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Address", u."HashedPassword", u."Name", u."PhoneNumber"
+FROM "Users" AS u
+WHERE u."Name" = @__name_0
+LIMIT 2
+2025-06-15 21:15:20.881 +00:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[Backend.Models.AuthResult, Backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-06-15 21:15:20.922 +00:00 [INF] Executed action Backend.Controllers.AuthController.Login (Backend) in 341.4013ms
+2025-06-15 21:15:20.923 +00:00 [INF] Executed endpoint 'Backend.Controllers.AuthController.Login (Backend)'
+2025-06-15 21:15:20.923 +00:00 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/Auth/login - 200 null application/json; charset=utf-8 352.104ms
